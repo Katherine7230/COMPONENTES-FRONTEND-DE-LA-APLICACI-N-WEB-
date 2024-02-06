@@ -1,0 +1,253 @@
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+
+    
+}     
+
+.cabecera {
+    width: 100%;
+    height: 100%;          
+    background: linear-gradient(#6a6363, #ada8a8);          
+    display: flex;   
+        
+     }    
+    .cabecera__logo {     
+      display: flex;
+      flex-direction: column;      
+      
+    }
+
+    .cabecera__brikss{
+      padding: 0;
+      margin: 10px 0 0 20px;       
+      color: #fff;
+      font-family: 'Italiana', sans-serif;
+      font-weight: 500;  
+      font-size: 40px;     
+   }
+
+   .cabecera__slogan {
+    padding-bottom: 5px;
+    margin-left: 30px;    
+    color: white;    
+    font-family: 'Lora', serif;   
+    font-weight: 200;
+ }
+
+     .cabecera__navegador {     
+        padding-right: 20px;
+        width: 50%;
+        font-family: 'Montserrat', sans-serif;
+        font-size:  1em;  
+        display: flex;    
+        flex-wrap: wrap;  
+        justify-content: right;
+        align-items: center;  
+        margin-left: auto;
+         }       
+        
+            
+  
+      .cabecera__navegador :hover {
+         background: #ccc;
+      }
+
+      .cabecera__nav-link {
+        width: 130px;
+        height: 45px;
+      margin: 12px;
+      padding: 10px;
+      text-decoration: none;
+      color: rgb(68, 66, 66);
+      border: 3px solid #c5c1c1;  
+      text-align: center;       
+
+     }          
+
+     .inicio {
+      width: 100%;
+      display: flex; 
+      justify-content: center;            
+      height: 80vh;      
+      background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0,0,0,0.5)), url(https://png.pngtree.com/background/20230401/original/pngtree-living-room-interior-home-background-picture-image_2252165.jpg) ;
+      background-size: cover;
+      background-attachment: fixed;
+      flex-direction: column;
+    }
+
+    .botones {
+      max-width: 190px;
+      display: flex;   
+      gap: 5px;
+      margin-left: 100px;
+    }
+
+    .inicio__boton {
+      min-width: 130px;
+      height: 45px;
+      background-color: rgba(237, 238, 245, 0.6);
+      padding: 10px;
+      font-family:'Montserrat', sans-serif; 
+      font-size: 18px;
+      font-weight: 500;
+      color: black;
+      text-align: center;
+      border: none;  
+      flex-grow: 1;     
+    } 
+
+    .inicio__busqueda{     
+      display: flex;  
+      margin-left: 100px;
+      margin-right: 180px;
+      
+           
+    } 
+
+    .inicio__input   {
+     flex-grow: 3;
+     flex-shrink: 1;
+     padding: 17px;
+     font-family:'Montserrat', sans-serif;
+     font-size: 16px;     
+     outline: 0;
+     border: none; 
+    }
+     
+
+     .inicio__boton-buscar{
+      flex-grow: 1;
+      align-self: center;
+      background: #6a6363;      
+      padding: 16px;
+      font-family:'Montserrat', sans-serif; 
+      font-size: 18px;
+      font-weight: 500;
+      color: white;
+      text-align: center;
+      border: none;             
+      cursor: pointer;    
+     
+
+    } 
+
+    .inicio__boton:hover{
+      cursor: pointer;
+      background: #6a6363;
+      color: white;
+    }
+
+/*     
+    @media (max-width:480px) 
+    {
+      .inicio__input {
+        width: 120px; 
+        font-size: 7px;}  
+        
+    .inicio__boton-buscar {
+          padding: 12px;
+      }
+      
+         
+    } */
+    
+    .propietario {
+      display: flex;         
+      align-items: space-around; 
+      flex-wrap: wrap;          
+
+    }
+
+    .propietario__img{
+      min-width: 360px;
+      margin: 30px 50px 0 50px;
+      object-fit: contain;
+      flex: 1;      
+      align-self: center;
+    }
+  
+    .propietario__contenido{
+      min-width: 200px;
+      display: flex;
+      flex: 1;
+      margin: 50px 80px;
+      flex-direction: column; 
+      align-items: center;   
+      flex: 1;        
+      
+    }
+
+    .propietario__anuncio{
+      padding:20px 0;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      text-align: center;
+      color: #323030;
+      flex: 1;
+
+    }
+    .propietario__texto{
+      padding: 10px 0 20px 0;
+      flex: 1;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      text-align: justify;
+      flex: 1;
+     } 
+
+    .propietario__boton {
+      max-width: 200px;
+      background: #6a6363;
+      padding: 18px;
+      font-family:'Montserrat', sans-serif; 
+      font-size: 18px;
+      font-weight: 500;
+      color: white;      
+      border: none;  
+      cursor: pointer;  
+      flex: 1;      
+}
+
+.redes{
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ margin: auto ;
+ width: 95%;
+ height: 100px;
+ background: linear-gradient(#6a6363, #ada8a8);    
+}
+    
+.redes a {
+  text-decoration: none;
+  font-size: 30px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: #4b5053;
+  color: #f1f1f1;
+  border-radius: 50%;
+  transition: all .4s ease-in-out;
+
+}
+
+
+.redes a:hover {
+  transform: scale(1.2);
+}
+
+.footer__menu {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  }
+
+.footer__menu__link{
+  text-decoration: none;
+
+}
